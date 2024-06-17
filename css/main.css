@@ -350,3 +350,128 @@ li{
      margin: 1rem;
 }
 }
+
+.footer{
+    width: 100vw;
+    height: auto;
+    background-color:hsl(216, 53%, 9%);
+    font-family: open sans;
+    color: #fff;
+    overflow-x: hidden;
+}
+.footer-image{
+    position: relative;
+    top: 4rem;
+    left: 15rem;
+}
+.footer_logo{
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+.footer_content{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin:4rem 15rem;
+    gap: 7rem;
+    opacity: 0.8;
+    cursor:pointer;
+}
+.footer_content_location{
+    width: 200px;
+    height: auto;
+}
+.footer_location_text{
+    margin-top: 0.5rem;
+    float: left;
+}
+.footer_content_contact{
+    display: flex;
+    flex-direction: column;
+}
+.footer_content_phone,
+.footer_content_email{
+    margin: 0.5rem 1rem;
+}
+.footer_image_one,
+.footer_image_two{
+    width: 10px;
+    height: 10px;
+    object-fit: contain;
+}
+.footer_content_about,
+.footer_content_about-two{
+    font-size: 1.3rem;
+}
+.footer_about,
+.footer_about-two{
+    opacity: 0.8;
+    line-height: 2.5rem;
+}
+.footer_icon{
+    width: 100px;
+    height: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer_image{
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.footer_icon_one,
+.footer_icon_two,
+.footer_icon_three{
+        width: 25px;
+        height: 25px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.footer_about:hover,
+.footer_about-two:hover{
+    opacity: 1;
+}
+.footer_icon_one:hover,
+.footer_icon_two:hover,
+.footer_icon_three:hover{
+        border: 1px solid hsl(176, 68%, 64%);
+}
+
+@media screen and (max-width:840px){
+    .footer{
+        width: 100%;
+    }
+    .footer_content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-image{
+        width: 100vw;
+        position: relative;
+        left: 38%;
+        
+    }
+    .footer_logo{
+        width: 120px;
+        height: 120px;
+        object-fit: contain;
+    }
+    .footer_content_contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    @media screen and (max-width:500px){
+        .footer-image{
+            left: 24%;
+        }
+    }
+}
